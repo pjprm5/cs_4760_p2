@@ -1,0 +1,17 @@
+Paul Passiglia
+CS 4760
+Project 7 (REDO OF PROJECT 2)
+12/13/2020
+
+COMPILE: make
+RUN: ./master -h for help
+     ./master -n # -s # -t #  
+
+Redo of project 2.
+Within my infile I have 20 lines of text to test for palindromes. There are spaces, punctuaction, and alphabet/digits as well
+to test. So I set my max children to be created to 20 and max children to run simlutaneously to 20 as well.
+Infile entries are written either to palin.out or nopalin.out with their PID, Index, and String.
+It seems like the max children to run simultaneously never reaches the limit I set on initial fork.
+I did not randomize the wait time before entering critical section, just set it to 1, because it was causing program to stall.
+Everything else is good afaik.
+
